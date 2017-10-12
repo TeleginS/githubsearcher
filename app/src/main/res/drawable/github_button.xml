@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/button_gray" android:height="45dp"/>
+    <item android:drawable="@drawable/github_64px" android:left="30dp" android:gravity="center|start" android:height="20dp"
+        android:width="20dp"/>
+</layer-list>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:id="@+id/titleView"
+        style="@style/dialogTitle"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Login" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        style="@style/dialogContent">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:hint="Username or email address"/>
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:hint="Password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsBar"
+        style="@style/dialogButtonsBar">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/onDialogPressedFirstButton"
+                style="@style/dialogButton"
+                android:text="Cancel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/onDialogPressedSecondButton"
+                style="@style/dialogButton"
+                android:text="Login"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
