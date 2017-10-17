@@ -1,10 +1,9 @@
 package com.telegin.githubsearcher;
 
 /**
- * Created by sergeytelegin on 13/10/2017.
+ * Created by sergeytelegin
  */
-
-public interface ILoginListener {
+interface ILoginListener {
     void onCancelLoginDialog();
     void onConfirmLoginDialog(String username, String password);
 }

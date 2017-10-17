@@ -30,28 +30,8 @@ public class LoginActivity extends AppCompatActivity implements ILoginListener {
 
     @Click
     public void githubLoginButton() {
-
-                loginDialog = LoginDialog.getInstance(this);
-                loginDialog.show(getFragmentManager(), LoginDialog.class.getName());
-
-//            new Thread(new Runnable() {
-//                @Override
-//                public void run() {
-//                    try {
-//                        boolean isgood = github.isCredentialValid();
-//                        GHRepositorySearchBuilder search = github.searchRepositories();
-//                        GHRepositorySearchBuilder s = search.q("MonoKit");
-//
-//                        PagedIterator<GHRepository> res = s.list()._iterator(3);
-//                        while (res.hasNext()) {
-//                            System.out.println(res.next().getFullName());
-//                        }
-//                    } catch (Exception ex) {
-//                        ex.printStackTrace();
-//                    }
-//                }
-//            }).start();
-
+        loginDialog = LoginDialog.getInstance(this);
+        loginDialog.show(getFragmentManager(), LoginDialog.class.getName());
     }
 
     @Click

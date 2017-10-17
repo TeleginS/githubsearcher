@@ -6,6 +6,15 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Style</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBar.Style" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:height">0dp</item>
+        <item name="android:logo">@null</item>
     </style>
 
     <style name="dialogTitle">
@@ -39,6 +48,13 @@
         <item name="android:background">@drawable/button_gray</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Progress Widget Definitions -->
+    <style name="progressWidget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
     </style>
 
 </resources>
